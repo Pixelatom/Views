@@ -12,7 +12,6 @@ namespace Pixelatom\Views;
  */
 class View implements Countable , Iterator , Traversable ,  ArrayAccess {
     
-    
     /**
      * Factory method for View class
      */
@@ -227,7 +226,7 @@ class View implements Countable , Iterator , Traversable ,  ArrayAccess {
         return $this;
     }
     
-    protected function include_view($name, &$this->array) {
+    protected function include_view ($name, &$array) {
         //// self::$_paths
         # va a mostrar view default
         if (empty($name)) {
@@ -252,11 +251,11 @@ class View implements Countable , Iterator , Traversable ,  ArrayAccess {
             throw new \Exception('View `' . $name . '` does not exists or can not be found');
 
 
-        $this->clousure($path, $this->array);
+        $this->clousure($path, $array);
     }
 
-    protected function clousure($path, &$this->array) {
-        extract($this->array, EXTR_REFS);
+    protected function clousure($path, &$array) {
+        extract($array, EXTR_REFS);
         include($path);
     }
     
