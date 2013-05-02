@@ -1,0 +1,32 @@
+{
+    "name": "pixelatom/views",
+    "description": "A simple view rendering implementation class for PHP. Load a view file, set variable values, it renders and you output.",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": ["url"],
+    "homepage": "https://github.com/Pixelatom/Views",
+    "time": "2013-04-30",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Arias",
+            "email": "javier.arias@pixelatom.com",
+            "homepage": "http://www.pixelatom.org",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@pixelatom.org",
+        "issues": "https://github.com/Pixelatom/Views/issues",
+        "source": "https://github.com/Pixelatom/Views"
+    },    
+    "autoload": {
+        "psr-0": {
+            "Pixelatom": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+    }
+}
